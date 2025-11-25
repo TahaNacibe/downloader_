@@ -50,7 +50,7 @@ def download_audio(urls, output_dir="Download", formate=VIDEO_BEST_QUALITY, ext=
 # run script
 if __name__ == "__main__":
     # settings
-    is_video = True
+    is_video = False
     no_playlist = True
     
     # output directory
@@ -59,7 +59,7 @@ if __name__ == "__main__":
     video_dir = root_output_dir + "/Video"
     
     # download settings
-    urls = ["https://www.tiktok.com/@zubsae/video/7573424844323228950?is_from_webapp=1&sender_device=pc"]
+    urls = ["https://www.youtube.com/shorts/nIZXgpGtGRQ"]
     formate = VIDEO_BEST_QUALITY if is_video else AUDIO_BEST_QUALITY
     ext = VIDEO_EXT if is_video else AUDIO_EXT
     output_dir = video_dir if is_video else audio_dir
